@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "employee-management-eab03": {
+      "hosting": {
+        "Employee": [
+          "daliaansalan-employee-management"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "employee-management-eab03"
+  }
+}

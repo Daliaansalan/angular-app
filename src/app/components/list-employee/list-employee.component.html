@@ -1,0 +1,52 @@
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-body">
+            <span class="h3">List of Employees</span>
+            <button class="btn btn-warning btn-lg float-end" routerLink="/create-employee"><i class="fa-solid fa-plus me-2"></i>Add Employee</button>
+            <table class="table mt-5">
+                <thead>
+                  <tr>
+                    <th>EMP_ID</th>
+                    <th>NAME</th>
+                    <th>EMAIL ID</th>
+                    <th>ACTIONS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>mark@gmail.com</td>
+                    <td>
+                        <i class="fa-sharp fa-solid fa-pen fa-lg text-info me-2" ></i>
+                        <i class="fa-solid fa-trash-can fa-lg text-danger"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>jacob@gmail.com</td>
+                    <td>
+                        <i class="fa-sharp fa-solid fa-pen fa-lg text-info me-2" ></i>
+                        <i class="fa-solid fa-trash-can fa-lg text-danger"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Lisa</td>
+                    <td>lisa@gmail.com</td>
+                    <td>
+                        <i class="fa-sharp fa-solid fa-pen fa-lg text-info me-2" ></i>
+                        <i class="fa-solid fa-trash-can fa-lg text-danger"></i>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- <ul>
+                <li class="text" *ngFor="let item of items | async">
+                  {{item.name}}
+                </li>
+              </ul> -->
+        </div>
+    </div>
+</div>

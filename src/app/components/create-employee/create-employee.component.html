@@ -1,0 +1,29 @@
+<div class="container pt-4">
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h3>Add Employee</h3>
+                    <span *ngIf="submitted && createEmployee.invalid" class="badge badge-danger">Enter All Requried Fields</span>
+                    <form class="mt-4" [formGroup]="createEmployee" (ngSubmit)="addEmployee">
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control form-control-lg" formControlName="EMP_ID" placeholder="EMP_ID">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control form-control-lg" formControlName="NAME" placeholder="NAME">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control form-control-lg mt-3" formControlName="EMAIL_ID" placeholder="EMAIL ID">
+                        </div>
+                        <div class="mt-3">
+                            <button type="text" class="btn btn-danger btn-lg me-3" routerLink="/list-employee">BACK</button>
+                            <button type="submit" class="btn btn-success btn-lg">ADD</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
